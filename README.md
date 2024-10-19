@@ -1,0 +1,2 @@
+# Solve-SQL
+HackerRank
