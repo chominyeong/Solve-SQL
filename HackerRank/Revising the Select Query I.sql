@@ -1,4 +1,4 @@
-/* https://www.hackerrank.com/challenges/revising-the-select-query/copy-from/406474004 */
+/* https://www.hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true */
 
 SELECT *
 FROM CITY
