@@ -1,0 +1,15 @@
+/* https://school.programmers.co.kr/learn/courses/30/lessons/299310 */
+
+SELECT YEAR(A.DIFFERENTIATION_DATE) AS YEAR, B.MAX_SIZE - A.SIZE_OF_COLONY AS YEAR_DEV, A.ID
+FROM ECOLI_DATA A
+LEFT JOIN (
+            SELECT MAX(SIZE_OF_COLONY) AS MAX_SIZE, YEAR(DIFFERENTIATION_DATE) AS YEAR
+            FROM ECOLI_DATA
+            GROUP BY YEAR(DIFFERENTIATION_DATE)
+            ) B
+ON YEAR(A.DIFFERENTIATION_DATE) = B.YEAR
+ORDER BY 1, 2
+
+
+-- 1. FROM and JOIN → ON 절 순서로 쿼리가 실행되므로, SELECT절의 별칭을 ON절에서 사용할 수 없음
+-- 2. LEFT JOIN 뒤에 서브쿼리 생성 가능
