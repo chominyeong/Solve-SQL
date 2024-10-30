@@ -5,4 +5,5 @@
 - 24.10.19 시작
 
 
-INNER & OUTER(LEFT,RIGHT,FULL) JOIN → https://loving-carp-ab8.notion.site/INNER-OUTER-LEFT-RIGHT-FULL-JOIN-12fb3da1c1d980fda670f346f4ef0ed8
+INNER & OUTER(LEFT,RIGHT,FULL) JOIN   
+https://loving-carp-ab8.notion.site/INNER-OUTER-LEFT-RIGHT-FULL-JOIN-12fb3da1c1d980fda670f346f4ef0ed8
