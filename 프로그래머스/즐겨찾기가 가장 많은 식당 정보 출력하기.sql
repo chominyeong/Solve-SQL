@@ -1,0 +1,14 @@
+/* https://school.programmers.co.kr/learn/courses/30/lessons/131123 */
+
+SELECT FOOD_TYPE, REST_ID, REST_NAME, FAVORITES
+FROM REST_INFO
+WHERE (FOOD_TYPE, FAVORITES) IN (SELECT FOOD_TYPE, MAX(FAVORITES) FROM REST_INFO GROUP BY FOOD_TYPE)
+ORDER BY 1 DESC
+
+
+-- 왜 이렇게는 안될까?
+SELECT FOOD_TYPE, REST_ID, REST_NAME, MAX(FAVORITES) FAVORITES
+FROM REST_INFO
+GROUP BY FOOD_TYPE
+ORDER BY 1 DESC
+# GROUP BY 로 묶으면 가장 최댓값이 아닌, 맨 첫번째 값을 가져오게 된다. [참고](https://school.programmers.co.kr/questions/38854)
