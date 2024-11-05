@@ -3,6 +3,7 @@
 - HackerRank부터 시작 → 프로그래머스가 더 다양하고 스킬을 요구하는 문제가 많음. 프로그래머스로 변경
 - mySQL로 진행
 - 24.10.19 시작
+- 모든 sql문은 내 생각 + 구글링을 통해 작성한 것. 블로그 참고 x
 
 ## 개념
 - SQL 쿼리 실행 순서 : FROM and JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT   
