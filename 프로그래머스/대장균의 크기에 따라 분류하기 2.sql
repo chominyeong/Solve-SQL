@@ -1,0 +1,19 @@
+/* https://school.programmers.co.kr/learn/courses/30/lessons/301649 */
+
+WITH RANK_DATA AS (
+    SELECT ID, PERCENT_RANK() OVER (ORDER BY SIZE_OF_COLONY DESC) SIZE_RANK
+    FROM ECOLI_DATA)
+    
+SELECT ID, 
+    CASE 
+        WHEN SIZE_RANK <= 0.25 THEN 'CRITICAL'
+        WHEN SIZE_RANK <= 0.50 THEN 'HIGH'
+        WHEN SIZE_RANK <= 0.75 THEN 'MEDIUM'
+        ELSE 'LOW'
+    END AS COLONY_NAME
+FROM RANK_DATA
+ORDER BY 1
+
+
+-- 1. WITH절
+-- 2. PERCENT_RANK() OVER ()
