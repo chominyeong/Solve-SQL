@@ -1,0 +1,5 @@
+/* https://school.programmers.co.kr/learn/courses/30/lessons/298518 */
+
+SELECT COUNT(*) FISH_COUNT
+FROM FISH_INFO T1 JOIN FISH_NAME_INFO T2 ON T1.FISH_TYPE = T2.FISH_TYPE
+WHERE FISH_NAME IN ('BASS', 'SNAPPER')
