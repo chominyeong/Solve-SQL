@@ -6,5 +6,5 @@
 - 모든 sql문은 내 생각 + 구글링을 통해 작성한 것. 블로그는 비교를 위해 참고
 
 ## 개념
-- SQL 쿼리 실행 순서 : FROM and JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT   
+- SQL 쿼리 실행 순서 : `FROM` and `JOIN` → `WHERE` → `GROUP BY` → `HAVING` → `SELECT` → `ORDER BY` → `LIMIT`    
 - [개념 정리](https://loving-carp-ab8.notion.site/Studying-SQL-12fb3da1c1d980bda78bd1c650b678ec)
