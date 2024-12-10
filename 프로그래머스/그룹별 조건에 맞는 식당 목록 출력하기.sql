@@ -10,3 +10,9 @@ FROM REST_REVIEW rest
     JOIN MEMBER_PROFILE mem ON rest.MEMBER_ID = mem.MEMBER_ID
 WHERE CNT = (SELECT MAX(CNT) FROM CNT_REVIEW)
 ORDER BY 3, 2
+
+
+-- 1. count 열을 추가한 가상 테이블을 먼저 생성하고
+-- 2. count 열을 원래 review 테이블에 조인 후
+-- 3. 그 다음에 member 정보를 JOIN한다.
+-- 그리고 MAX(CNT)에서 count 정보를 불러와 추출하고 싶은 컬럼 select하면 된다.
